@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Project 09</title>
+    <style>
+      body {
+        background-image: url("Project 06/bg.jpg");
+        width: 100%;
+        background-size: cover;
+        background-color: beige;
+      }
+
+      h1 {
+        font-size: 60px;
+        text-align: center;
+      }
+
+      label {
+        font-size: 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 600;
+      }
+
+      input {
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Favourite</h1>
+
+    <div>
+      <form action="success.html">
+        <label>Name : </label>
+        <input type="text" placeholder="name" /><br />
+
+        <label>Email : </label>
+        <input type="email" placeholder="email" /><br />
+
+        <label>Contact : </label>
+        <input type="number" placeholder="contact" /><br />
+
+        <p>Choose your favourite language</p>
+
+        <!-- name control the unique selection -->
+        <input type="radio" id="html" value="html" name="fav" />
+        <label for="radio_button">HTML</label>
+
+        <input type="radio" id="css" value="css" name="fav" />
+        <label for="radio_button">CSS</label><br />
+
+        <p>Choose your favourite fruits :</p>
+
+        <input type="checkbox" id="banana" value="banana" name="banana" />
+        <label for="banana">Banana</label>
+
+        <input type="checkbox" id="apple" value="banana" name="apple" />
+        <label for="apple">Apple</label>
+
+        <input type="checkbox" id="mango" value="mango" name="mango" />
+        <label for="mango">Mango</label><br />
+
+        <!-- Button -->
+        <input
+          type="submit"
+          value="Submit"
+          style="background-color: greenyellow; padding: 5px"
+        />
+
+        <input
+          type="reset"
+          value="Reset"
+          style="background-color: grey; padding: 5px"
+        />
+      </form>
+    </div>
+  </body>
+</html>
