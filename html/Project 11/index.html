@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Project 11</title>
+
+    <style>
+      body {
+        background-color: cornsilk;
+      }
+      .search_field {
+        font-size: 16px;
+        border: none;
+        border-radius: 20px;
+        padding: 20px 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        margin-top: 10px;
+      }
+
+      .logo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-top: 300px;
+      }
+
+      .submit_button {
+        padding: 20px 30px;
+        display: block;
+        background-color: greenyellow;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+
+      button {
+        padding: 20px 30px;
+        display: block;
+        background-color: aqua;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- GET means the form data is added to the URL as query parameters -->
+    <form action="https://www.google.com/search" method="get">
+      <img src="../bg//no-bg.png" class="logo" />
+
+      <!-- q become the key and final url got as ?q=value -->
+      <input type="text" placeholder="Search" name="q" class="search_field" />
+      <input type="submit" class="submit_button" />
+      <button formaction="https://www.google.com">Google</button>
+    </form>
+  </body>
+</html>
