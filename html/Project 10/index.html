@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Project 10</title>
+
+    <style>
+      body {
+        background-image: url("../bg/bg1.jpg");
+        width: 100%;
+        background-size: cover;
+      }
+
+      img {
+        width: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h1 {
+        font-size: 60px;
+        text-align: center;
+      }
+
+      input {
+        border: none;
+        border-radius: 200px;
+        background-color: bisque;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../bg/spo.png" alt="" />
+
+    <h1>Search here</h1>
+
+    <div style="text-align: center">
+      <!-- get : when submit fetch the value in input fields -->
+      <form action="https://www.google.com/search" method="get">
+        <!-- search text field -->
+        <input type="text" placeholder="Search" name="q" />
+
+        <!-- button -->
+        <input type="submit" value="Search" />
+      </form>
+    </div>
+  </body>
+</html>
