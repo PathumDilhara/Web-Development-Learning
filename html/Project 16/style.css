@@ -1,0 +1,36 @@
+body {
+    background-color: aqua;
+}
+
+.banner_image {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+h1{
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    display: block;
+    margin: 5px, auto;
+    font-size: 16px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 40px auto;
+    width: 60%;
+}
+
+th, td {
+    padding: 20px 30px;
+}
+
+th {
+    font-weight: 600;
+}
