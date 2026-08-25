@@ -1,0 +1,80 @@
+p {
+  font-size: 30px;
+}
+
+/* 
+p is called selctor 
+
+things with incurly brackets {} we call decorations
+
+font-size is called as property
+
+30px is the value
+*/
+
+/* 
+====== Selectors types =========
+1. Simple selectors
+2. Combinator selector
+3. Psuedo class selectors
+4. Psuedo element selectors
+5. Attribute selectors
+*/
+
+/* CSS element selector */
+h1 {
+  color: blue;
+}
+
+/* CSS id selector */
+#my_h2 {
+  color: aquamarine;
+}
+
+/* CSS class selector */
+.my_h3 {
+  color: green;
+}
+
+/* style only p tags cotain my_style as class */
+p.my_style {
+  color: yellow;
+}
+
+/* CSS class selector */
+/* 
+======== Simple selector ============
+1.1. CSS element selector (eg : p, h1, img,... all defined in html)
+1.2. CSS id selector ( <h2 id="my_h2">.... here selector us my_para use # as prefix in css for ids)
+1.3. CSS class selector (assing class for tags use it with .prefix in css)
+*/
+
+/* Universal selector */
+/* addings style to all html elts */
+* {
+  color: red;
+}
+
+/* Grouping selectors */
+p,
+h2 {
+  font-size: 50px;
+}
+
+/* Color in hex code 
+
+  #rrggbb eg: ff12a2
+  # if both rr are equal use single r
+
+  # rgb eg : #000 black
+*/
+
+/* Colors in hsl (Hue, Saturation, lightness)
+
+hue : 0-360 > 0 - r, g - 120,b - 240
+satur : 0- 100%
+light : 0-100%
+
+
+same as rgb we canhave hsla with alpha/opacity 0-1
+*/
