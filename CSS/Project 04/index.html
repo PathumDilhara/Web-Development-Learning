@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* width apoplied only for context chek with inspect > elements > component */
+      /* Total box widhth = width + padding + border */
+      .my_para {
+        width: 450px;
+        border: 10px solid blue;
+        padding: 30px;
+        margin: 30px;
+      }
+
+      /* outline off set for adding gap between content and outline */
+      .out_line {
+        width: 450px;
+        outline: 10px solid blue;
+        padding: 30px;
+        margin: 30px;
+        outline-offset: 30px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="my_para">
+      <h2>My heading border box model</h2>
+    </div>
+
+    <div class="out_line">
+      <h2>My heading outline</h2>
+    </div>
+  </body>
+</html>
