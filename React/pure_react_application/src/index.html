@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pure React App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+
+    <script>
+      const App = () => {
+        // Create a React element using JSX syntax
+        return React.createElement(
+          "div", // elt is wrapped with div tag
+          {}, // empty elt
+          //   "This is react",
+          React.createElement("h1", {}, "My React app"),
+        );
+      };
+
+      const container = document.getElementById("root"); // get elt called root and name it as container
+      const root = ReactDOM.createRoot(container); // use this container as react dom root
+      root.render(React.createElement(App)); // render the App component inside the root
+    </script>
+  </body>
+</html>
